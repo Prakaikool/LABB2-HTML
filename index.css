@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+  background-color: #285039;
+  font-family: Lek, arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main-content {
+  padding: 3em;
+}
+
+/*---- navbar delen----*/
+.navbar {
+  padding: 15px 20px;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.logo a {
+  font-family: Lek, 'Playfair Display', serif;
+  color: #D5B25E;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  font-family: Lek, 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #D5B25E;
+  padding: 10px;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-items {
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.nav-item a,
+.logo a {
+  text-shadow: 1px 1px 2px #333333;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+}
+
+/*----foto efter navbar---*/
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Bilden */
+.bild {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.image-container .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.home-section {
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 150px;
+  margin-top: 80px;
+}
+
+.price-section {
+  margin-top: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.booking-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-section h2 {
+  font-family: Lek, 'Playfair Display', serif;
+  font-size: 24px;
+  color: #285039;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-family: Lek, sans-serif;
+  font-size: 16px;
+  color: #285039;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  font-family: Lek, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #D5B25E;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #b18c45;
+}
+
+.price {
+  flex: 1 1 30%;
+}
+
+.price img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery-section {
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 30px;
+  background: #D5B25E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.policy-section {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.policy-section {
+  color: #ffffff;
+  padding: 40px;
+  margin: 40px auto;
+}
+
+.policy-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #D5B25E;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.policy-section h5 {
+  font-family: Lek, sans-serif;
+  font-size: 20px;
+  color: #D5B25E;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.policy-section p {
+  font-family: Lek, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.policy-section p::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  color: #285039;
+}
+
+.policy-section h5 {
+  border-bottom: 2px solid #D5B25E;
+  padding-bottom: 5px;
+}
+
+.about-section {
+  background-color: #ffffff;
+  color: #285039;
+  padding: 40px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-family: Lek, 'Playfair Display', serif;
+  font-size: 28px;
+  color: #D5B25E;
+  margin-bottom: 20px;
+}
+
+.about-section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section p {
+  font-family: Lek, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.footer {
+  background-color: #285039;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer h3 {
+  font-family: Lek, 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #D5B25E;
+}
+
+.footer p {
+  font-family: Lek;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #D5B25E;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #D5B25E;
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .image-container .text-overlay {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .main-content {
+    padding: 1em;
+  }
+
+  .booking-section {
+    padding: 15px;
+  }
+
+  .price {
+    flex: 1 1 100%;
+  }
+
+  .price-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+}
+
+/* ------font ------*/
+
+@font-face {
+  font-family: Lek;
+  src: url('fonts/Lekton-Regular.woff') format('woff');
+}

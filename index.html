@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Katt Palace - Det ultimata paradiset för din katt. Boka nu för en trygg och kärleksfull vistelse.">
+  <title>Katt-Palace</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navdiv">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="#home">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a href="#booking">Boka</a>
+          </li>
+          <li class="nav-item">
+            <a href="#price">Priser</a>
+          </li>
+          <li class="logo">
+            <a href="#home">Katt Palace</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery">Galleri</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contract">Kontakt</a>
+          </li>
+        </ul>
+        <div class="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="image-container">
+      <img src="img/katt.jpg" alt="katt" class="bild">
+      <div class="text-overlay">
+        <h1>Välkommen till Katt Palace</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section id="home" class="home-section">
+      <p>Det ultimata paradiset för din katt när du är bortrest, upptagen eller behöver en trygg plats för din fyrbenta
+        vän. Hos oss får din katt inte bara ett tryggt boende, utan en helhetsupplevelse fylld av komfort, stimulans och
+        omtanke.</p>
+      <h2>Låt Katt Palace bli din katts andra hem, där lyx och kärlek går hand i hand!</h2>
+    </section>
+
+    <section id="booking" class="booking-section">
+      <h2>Boka Tid</h2>
+      <form action="/submit-booking" method="POST">
+        <div class="form-group">
+          <label for="first-name">Förnamn</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Förnamn" required>
+        </div>
+        <div class="form-group">
+          <label for="after-name">Efternamn</label>
+          <input type="text" id="after-name" name="after-name" placeholder="Efternamn" required>
+        </div>
+        <div class="form-group">
+          <label for="tel">Telefonnummer</label>
+          <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" required pattern="[0-9]{10}">
+        </div>
+        <input type="submit" value="Boka" class="submit-button">
+      </form>
+    </section>
+
+    <section id="price" class="price-section">
+      <h6>R</h6>
+      <article class="price">
+        <h3>Standard</h3>
+        <p>Vi erbjuder ett bekvämt och tryggt boende för katter där alla grundläggande behov är tillgodosedda. Varje
+          katt får ett privat utrymme med en skön liggplats, daglig utfodring och tillgång till färskt vatten samt
+          daglig rengöring av kattlådan. Det finns olika leksaker och katten får socialisera med personalen.</p>
+        <p>Standard - rum för 1 - 2 katter 200 kr / dygn</p>
+        <img src="img/standard.jpeg" alt="rum1">
+      </article>
+
+      <article class="price">
+        <h3>Superior</h3>
+        <p>Detta rum passar för katter som vill ha extra komfort och uppmärksamhet. Här får katten ett större och mer
+          privat utrymme med mjukare sängar, fler leksaker och klösmöbler. Katten får mer personlig interaktion med
+          personalen som till exempel längre lektid eller mysstunder. Dessutom kan ägarna välja bland olika
+          foderalternativ.</p>
+        <p>Superior - rum för 1-4 katter 400 kr / dygn</p>
+        <img src="img/superior.jpg" alt="rum2">
+      </article>
+
+      <article class="price">
+        <h3>Deluxe</h3>
+        <p>Deluxe är ett lyxigt alternativ med större sviter som inkluderar flera nivåer eller klättra utrymme. Rummet
+          är utrustat med möbler som speglar kattens naturliga behov som klösträd och utkiksplatser. Med detta rum har
+          också katten tillgång till fönster eller utomhus utrymme för att kunna njuta av miljön utanför.</p>
+        <p>Deluxe - rum för 1-4 katter 500 kr / dygn</p>
+        <img src="img/deluxe.jpg" alt="rum3">
+      </article>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <h2>Galleri</h2>
+      <img src="img/catplaying.jpg" alt="Katt som leker">
+      <img src="img/cattree.jpg" alt="Katt på klösträd">
+      <img src="img/Orange.jpg" alt="Orange katt">
+      <img src="img/catsitting.jpg" alt="Katt">
+    </section>
+
+    <section id="policy" class="policy-section">
+      <h2>Villkor & policys</h2>
+      <h5>Boknings och avbokningspolicy</h5>
+      <p>För att boka en vistelse för din katt hos oss erbjuder vi flera enkla alternativ samt tydliga regler för
+        avbokning:</p>
+      <h5>Bokning</h5>
+      <p>Bokning av vistelse kan göras via e-post, telefon, eller direkt genom vår hemsida. Vänligen ange all
+        nödvändig
+        information om din katt vid bokning, inklusive vaccinationsstatus och ID-nummer för mikrochip.
+        Vid bokning tas en deposition på 500 kr som säkrar din plats och kattens vistelse. Depositionen kommer att
+        återbetalas vid incheckning.</p>
+      <h5>Avbokning</h5>
+      <p>Avbokning måste ske minst 24 timmar innan den avtalade vistelsen påbörjas för att undvika extra kostnader.
+        Vid sen avbokning, det vill säga mindre än 24 timmar före bokningens start, eller om du inte dyker upp på
+        bokad
+        tid, återbetalas inte depositionen.</p>
+      <h5>Villkor och krav för kattens vistelse</h5>
+      <p>För att säkerställa en trygg och säker miljö för alla katter som vistas på vårt kattpensionat, har vi
+        följande
+        krav och regler som måste efterföljas:</p>
+      <h5>Vaccination och ID-märkning</h5>
+      <p>Alla katter som vistas hos oss måste vara fullständigt vaccinerade enligt gällande vaccinationskrav. Vid
+        incheckning ska giltiga vaccinationsintyg uppvisas.Samtliga katter måste vara ID-märkta med ett mikrochip,
+        vilket ska kunna verifieras vid bokning och inlämning.</p>
+      <h5>Hälsa och hygien</h5>
+      <p>Katter som lämnas hos oss måste vara vid god hälsa. Vi tar inte emot katter med smittsamma sjukdomar, sår,
+        eller annan ohälsa som kan riskera andra katters välbefinnande.
+        Om det skulle uppdagas i efterhand att en katt lämnats in med en smittsam sjukdom eller ohälsa, förbehåller vi
+        oss rätten att utfärda böter och eventuellt vidta rättsliga åtgärder.</p>
+      <h5>Ombesörjning av katt</h5>
+      <p>Kattägaren är ansvarig för att hämta sin katt vid avtalad tid. Om ägaren medvetet underlåter att hämta sin
+        katt, kommer ärendet att polisanmälas och en avgift motsvarande dubbla kostnaden för den överenskomna
+        vistelsen
+        kommer att debiteras.</p>
+      <h5>Veterinärvård och sjukdom under vistelsen</h5>
+      <p>Om en katt skulle insjukna under sin vistelse hos oss, förbinder vi oss att omedelbart kontakta veterinär för
+        bedömning och vård. Eventuella veterinärkostnader kommer att faktureras kattägaren. Kattägaren kommer att
+        informeras så snart det är möjligt om kattens hälsotillstånd, och om nödvändigt kommer
+        katten att transporteras tillbaka till ägaren.</p>
+      <h5>Allvarlig sjukdom och dödsfall</h5>
+      <p>Det tragiska fall att en katt drabbas av en allvarlig sjukdom under sin
+        vistelse som leder till dödsfall,
+        frånsäger vi oss allt ansvar för detta, förutsatt att vi har agerat med omedelbar och adekvat vård och enligt
+        de
+        riktlinjer som gäller för kattens välbefinnande.</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>Om Katt Palace</h2>
+      <img src="img/personal.jpg" alt="personal aom jobba här">
+      <p>Vi på Katt Palace började vår resa från grunden, driven av en genuin kärlek till katter. Det hela började
+        enkelt! Som passionerade kattälskare och ägare insåg vi hur viktigt det är att ge varje katt den omsorg och
+        uppmärksamhet de förtjänar. Det var denna kärlek och omtanke som ledde oss till att börja vakta andras katter,
+        utan att vi någonsin kunde föreställa oss hur långt denna resa skulle ta oss. Med tiden växte vår verksamhet,
+        och idag har vi etablerat oss i tre städer runt om i Sverige. Vi är både stolta och tacksamma över hur långt
+        vi
+        har kommit, men vår vision stannar inte där. Vi har siktet inställt på fortsatt expansion, och vi ser fram
+        emot
+        att kunna erbjuda vår förstklassiga service till ännu fler kattägare och deras älskade katter. Vår resa må ha
+        börjat med ren kärlek för djuren, men idag står vi som ett pålitligt och växande företag, där varje steg
+        framåt
+        är ett steg närmare att förverkliga drömmen om ett rikstäckande katthotellnätverk.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <section id="opentime" class="opentime-section">
+          <h3>Öppettider</h3>
+          <p>Telefonstid</p>
+          <p>Måndag - fredag 09.00-17.00</p>
+          <p>Lördag - söndag 10.00-15.00</p>
+        </section>
+      </div>
+      <div class="footer-column">
+        <section id="contract" class="contract-section">
+          <h3>Kontaktinformation</h3>
+          <p>Katt.palace@gmail.com</p>
+          <p>Telefon: 0123-456789</p>
+          <p>Adress: Kattgatan 1, 12345 Katthamn</p>
+        </section>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Katt Palace. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
